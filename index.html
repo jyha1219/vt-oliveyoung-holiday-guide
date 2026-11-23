@@ -167,6 +167,11 @@ section{padding:56px 0}
 .br.alt .l{color:var(--mint-d)}
 .br .go{font-size:15px;font-weight:750;line-height:1.35;color:var(--ink)}
 .br .ar{margin-top:auto;font-size:13px;font-weight:700;color:var(--ink3)}
+.br .cta{margin-top:10px;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 16px;border-radius:999px;background:linear-gradient(135deg,#c8323c,#e0525b);color:#fff;font-size:14px;font-weight:850;letter-spacing:.04em;text-align:center;box-shadow:0 8px 18px rgba(200,50,60,.28);animation:ctapulse 2.2s ease-in-out infinite}
+.br .cta i{font-style:normal;display:inline-block;animation:ctanudge 1.1s ease-in-out infinite}
+@keyframes ctapulse{0%,100%{box-shadow:0 8px 18px rgba(200,50,60,.28)}50%{box-shadow:0 8px 26px rgba(200,50,60,.5)}}
+@keyframes ctanudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+@media (prefers-reduced-motion:reduce){.br .cta,.br .cta i{animation:none}}
 
 /* product */
 .prod-grid{margin-top:26px;display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:center}
@@ -683,9 +688,9 @@ body::before{content:"";position:fixed;left:0;right:0;top:0;height:6px;z-index:6
  <section id="stock" style="padding-top:8px"><div class="wrap"><div class="stock rv"><div class="stock-in">
   <span class="step0">YOUR FORMAT</span>
   <h2 class="stock-t">SHOWCASE POP-UP VISIT</h2>
-  <p class="stock-b">Tap to open the full content guide.</p>
+  <p class="stock-b">👇 <b>Click below</b> to see the full content guideline!</p>
   <div class="branches">
-   <a class="br" href="#visit"><span class="l">IN-STORE VISIT · HOLIDAY</span><span class="go">VT Showcase Pop-up at Olive Young US</span><span class="ar" aria-hidden="true">Open guide →</span></a>
+   <a class="br" href="#visit"><span class="l">IN-STORE VISIT · HOLIDAY</span><span class="go">VT Showcase Pop-up at Olive Young US</span><span class="cta">👉 CLICK HERE · FULL CONTENT GUIDELINE <i aria-hidden="true">→</i></span></a>
   </div></div></div></div></section>
 </section>
 
